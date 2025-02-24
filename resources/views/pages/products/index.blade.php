@@ -90,12 +90,12 @@
                                                 </td>
                                                 <td>
                                                     {{-- {{ $product->category }} --}}
-                                                    @if ($product->category == 'produk1')
-                                                        Produk 1
-                                                    @elseif ($product->category == 'produk2')
-                                                        Produk 2
-                                                    @elseif ($product->category == 'produk3')
-                                                        Produk 3
+                                                    @if ($product->category == 'produk')
+                                                        Produk
+                                                    @elseif ($product->category == 'sembako')
+                                                        Sembako
+                                                    @elseif ($product->category == 'retail')
+                                                        Retail
                                                     @endif
                                                 </td>
                                                 <td>
