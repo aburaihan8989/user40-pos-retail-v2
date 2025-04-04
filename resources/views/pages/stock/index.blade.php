@@ -90,8 +90,8 @@
 
                                                 <td>
                                                     {{-- {{ $product->category }} --}}
-                                                    @if ($data->category == 'produk')
-                                                        Produk
+                                                    @if ($data->category == 'toko')
+                                                        Toko
                                                     @elseif ($data->category == 'sembako')
                                                         Sembako
                                                     @elseif ($data->category == 'retail')
