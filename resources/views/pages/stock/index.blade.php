@@ -54,7 +54,7 @@
                                 <div class="float-right">
                                     <form method="GET" action="{{ route('stock.index') }}">
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Search Name" name="transaction_time">
+                                            <input type="date" class="form-control" placeholder="Search Name" name="transaction_time">
                                             <div class="input-group-append">
                                                 <button class="btn btn-primary"><i class="fas fa-search"></i></button>
                                             </div>
@@ -73,7 +73,7 @@
                                             <th>Category</th>
                                             <th>Quantity</th>
                                             <th>Total Price</th>
-                                            <th>Action</th>
+                                            {{-- <th>Action</th> --}}
                                         </tr>
                                         <?php $no = 1; ?>
                                         @foreach ($products as $data)
@@ -115,14 +115,14 @@
                                                 {{-- <td>
                                                     {{ $product->created_at }}
                                                 </td> --}}
-                                                <td>
+                                                {{-- <td>
                                                     <div class="d-flex">
                                                         @if ( auth()->user()->roles == "admin" )
                                                             {{-- <a href='{{ route('product.edit', $product->id) }}'
                                                                 class="btn btn-sm btn-info btn-icon">
                                                                 <i class="fas fa-edit"></i>
                                                                 Edit
-                                                            </a> --}}
+                                                            </a>
                                                             <a href='#'
                                                                 class="btn btn-sm btn-secondary btn-icon">
                                                                 <i class="fas fa-edit"></i>
@@ -141,13 +141,13 @@
                                                             method="POST" class="ml-2"> --}}
                                                             {{-- <input type="hidden" name="_method" value="DELETE" />
                                                             <input type="hidden" name="_token"
-                                                                value="{{ csrf_token() }}" /> --}}
+                                                                value="{{ csrf_token() }}" />
                                                             <button class="btn btn-sm btn-secondary btn-icon confirm-delete ml-2">
                                                                 <i class="fas fa-times"></i> Delete
                                                             </button>
                                                         </form>
                                                     </div>
-                                                </td>
+                                                </td> --}}
                                             </tr>
                                             <?php $no++; ?>
                                         @endforeach
